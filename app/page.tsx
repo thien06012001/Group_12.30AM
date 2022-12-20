@@ -18,21 +18,21 @@ function page({}: Props) {
   return (
     <div className='welcome_page'>
       <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-    <div id='title'>
-    <span className='mr-3 p-0'>
-      {text} <Cursor cursorColor='white' />
-    </span>
-              
-    <Link href={'HomePage'} className='button'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Get Started 
-    </Link>
-</div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='title'>
+        <span className='mr-3 p-0'>
+          {text} <Cursor cursorColor='white' />
+        </span>
+                
+        <Link href={'HomePage'} className='button'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Get Started 
+        </Link>
+      </div>
     </div>
   )
 }

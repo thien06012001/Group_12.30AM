@@ -7,7 +7,7 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>Group</title>
+        <title>Welcome Page</title>
       </head>
       <body>
         {children}
