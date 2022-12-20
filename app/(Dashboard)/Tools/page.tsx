@@ -13,10 +13,10 @@ import styles from '../../../styles/text.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 type Props = {
-    directionLeft?: boolean;
+   
 }
 
-function page({directionLeft}: Props) {
+function page({}: Props) {
   return (
     <div className='flex flex-col'>
             <motion.div
