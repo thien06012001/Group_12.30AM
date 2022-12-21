@@ -8,7 +8,7 @@ function page({}: Props) {
   return (
     <div className=" relative z-40 mt-7 items-center justify-center">
       <div className="flex flex-row items-center justify-center">
-         <motion.p 
+         <motion.div 
           initial={{ 
             opacity: 0,
             x: -300
@@ -16,17 +16,17 @@ function page({}: Props) {
           whileInView={{opacity:1,x:-10}}
           transition={{duration:1.35}}
           viewport={{once:true}} 
-          className={styles.text} >Team</motion.p>
-        <motion.p
+          className={styles.text} >Team</motion.div>
+        <motion.div
           initial={{ 
             opacity: 0,
-            x: 150
+            x: 300
             }}
           whileInView={{opacity:1,x:10}}
-          transition={{duration:0.5}}
+          transition={{duration:1.35}}
           viewport={{once:true}} 
           className={styles.text2}>Name
-        </motion.p>
+        </motion.div>
       </div>
       <div className={styles.boxed}>
           <p className={styles.content}>
@@ -38,6 +38,26 @@ function page({}: Props) {
             As a result, we realized on that Friday night that there would be no space available after 12:30. 
             Therefore, we choose to set the team name as 12:30AM as a funny and memorable memory for us. 
           </p>
+      </div>
+      <div className="flex flex-row mt-20">
+         <motion.div 
+          initial={{ 
+            opacity: 0,
+            y: -100
+            }}
+          whileInView={{opacity:1,x:-10, y:0}}
+          transition={{duration:1.35}}
+          viewport={{once:true}} 
+          className={styles.text3} >Personal </motion.div>    
+          <motion.div 
+          initial={{ 
+            opacity: 0,
+            y: 100
+            }}
+          whileInView={{opacity:1,x:10, y:0}}
+          transition={{duration:1.35}}
+          viewport={{once:true}} 
+          className={styles.text4} >Information </motion.div>
       </div>
       <NavBarForInfo/>
     </div>

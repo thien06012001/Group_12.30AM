@@ -1,5 +1,5 @@
 .text {
-  @apply text-center text-3xl tracking-[20px] flex uppercase
+  @apply text-right text-3xl tracking-[20px] uppercase
     animate-pulse;
   background: -webkit-linear-gradient(rgb(31, 42, 145), rgb(51, 132, 84));
   -webkit-background-clip: text;
@@ -7,7 +7,21 @@
 }
 .text2 {
   @apply text-3xl tracking-[20px] uppercase
-    animate-pulse duration-1000;
+    animate-pulse;
+  background: -webkit-linear-gradient(rgb(31, 42, 145), rgb(51, 132, 84));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text3 {
+  @apply text-right text-3xl tracking-[20px] uppercase w-full
+    animate-pulse;
+  background: -webkit-linear-gradient(rgb(31, 42, 145), rgb(51, 132, 84));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text4 {
+  @apply text-left text-3xl tracking-[20px] uppercase w-full
+    animate-pulse;
   background: -webkit-linear-gradient(rgb(31, 42, 145), rgb(51, 132, 84));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,8 +36,6 @@
 	width: 60%;
 	background: linear-gradient(0deg, #000, #272727);
     /* background-color: #c4c4c4; */
-    
- 
   
 }
 

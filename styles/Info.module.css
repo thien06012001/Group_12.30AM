@@ -9,7 +9,7 @@
     width: calc(2*var(--s) + var(--g));
     grid-auto-flow: column;
   }
-  .gallery > img {
+  .gallery > div {
     width: 0;
     min-width: calc(100% + var(--z));
     filter: grayscale(100%);
@@ -20,11 +20,11 @@
     cursor: pointer;
     transition: .5s;
   }
-  .gallery > img:hover {
+  .gallery > div:hover {
     width: calc(var(--s)/2);
     filter: none;
   }
-  .gallery > img:first-child {
+  .gallery > div:first-child {
     place-self: start;
     clip-path: polygon(calc(2*var(--z)) 0,100% 0,100% 100%,0 100%);
     --mask: 
@@ -32,7 +32,7 @@
         50%/100% calc(2*var(--z)) repeat-y;
   }
  
-  .gallery > img:last-child {
+  .gallery > div:last-child {
     place-self: end;
     clip-path: polygon(0 0,100% 0,calc(100% - 2*var(--z)) 100%,0 100%);
     --mask: 
@@ -56,14 +56,14 @@
     word-spacing: .8em;
   }
   .span1 {
-    color: red;
+    color: rgb(213, 34, 49);
   }
   .span2 {
-    color: #0b3fa1;
+    color: rgb(129, 178, 222);
   }
   .span3 {
-    color: orange;
+    color: rgb(173, 114, 12);
   }
   .span4 {
-    color: purple;
+    color: rgb(206, 36, 163);
   }
