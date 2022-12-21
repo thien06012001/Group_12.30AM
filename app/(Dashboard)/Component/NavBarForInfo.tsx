@@ -17,13 +17,13 @@ function NavBarForInfo({}: Props) {
           <div className={styles.gallery}>
             <div>
               <h1 className={styles.h1}>
-                <span className={styles.span1}>Jiren</span>  
+                <span className={styles.span1}>Thien-s3975010</span>  
               </h1>
               <img onClick={() => router.push('/HomePage/Thien')} src={jiren.src} alt="" className='h-full w-full'/>
             </div>
             <div>
               <h1 className={styles.h1}>
-                  <span className={styles.span2}>Goku</span>
+                  <span className={styles.span2}>Bang-s3975015</span>
               </h1>
               <img onClick={() => router.push('/HomePage/Bang')} src={goku.src} alt="" className='h-full w-full'/> 
             </div>
@@ -32,13 +32,13 @@ function NavBarForInfo({}: Props) {
           <div className={styles.gallery}>
             <div>
               <h1 className={styles.h1}>
-                <span className={styles.span3}>Goku2</span>  
+                <span className={styles.span3}>Hien-s3883260</span>  
               </h1>
               <img onClick={() => router.push('/HomePage/Hien')} src={goku2.src} alt="" className='h-full w-full'/>
             </div>
             <div>
               <h1 className={styles.h1}>
-                  <span className={styles.span4}>Vegetable</span>
+                  <span className={styles.span4}>Yeuun-s3912055</span>
               </h1>
               <img onClick={() => router.push('/HomePage/Yeeun')} src={vegeta.src} alt="" className='h-full w-full'/> 
             </div>
