@@ -6,7 +6,7 @@ import NavBarForInfo from "../Component/NavBarForInfo";
 type Props = {};
 function page({}: Props) {
   return (
-    <div className=" relative z-40 mt-7 items-center justify-center">
+    <div className="relative z-40 mt-7 items-center justify-center">
       <div className="flex flex-row items-center justify-center">
          <motion.div 
           initial={{ 
@@ -30,7 +30,7 @@ function page({}: Props) {
       </div>
       <div className={styles.boxed}>
           <p className={styles.content}>
-             After discussion, we decided the name for our team is 12:30AM. 
+            After discussion, we decided the name for our team is 12:30AM. 
             It got its name from the simplest mistake we ever made. 
             For the second meeting, we tasked Bang with scheduling a meeting at the SGS campus. 
             The second meeting was slated to start at 12:30 on Friday, following the conclusion of class. 
@@ -59,9 +59,9 @@ function page({}: Props) {
           viewport={{once:true}} 
           className={styles.neonText3} >Information </motion.div>
       </div>
-      <NavBarForInfo/>
+      <div className="mt-[-200px]"><NavBarForInfo/></div>
       <div className="items-center justify-center">
-      <div className="flex items-center justify0-center">
+      <div className="flex items-center justify-center mt-[-200px]">
         <motion.div 
             initial={{ 
               opacity: 0,

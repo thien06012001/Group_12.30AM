@@ -12,6 +12,7 @@ import next from '../../../public/assets/nextjs.png'
 import styles from '../../../styles/text.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+
 type Props = {
    
 }
@@ -28,7 +29,7 @@ function page({}: Props) {
                 transition={{duration:1}}
                 viewport={{once:true}}
                 className=' uppercase z-40 mt-7 mx-auto'>
-                <p className={styles.text2} >Tools</p> 
+                <p className={styles.neonText2} >Tools</p> 
             </motion.div>
         <div className='relative z-30 cursor-pointer grid grid-cols-3 w-[50%] ml-[25%] h-[600px]  '>
             <div className='group relative flex cursor-pointer m-auto'>
