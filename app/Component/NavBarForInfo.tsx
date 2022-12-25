@@ -61,8 +61,7 @@ function NavBarForInfo({}: Props) {
             <div className={styles.content}>
               <p className={styles.content1}>
                 {" "}
-                Chau Chan Thien <br />
-                s3975010
+                Chau Chan Thien <br /> <span className={styles.wipe}>s3975010</span> 
               </p>
               <div className='justify-center'>
                 <button onClick={() => router.push('HomePage/Thien')} className={styles.check}>
@@ -89,8 +88,7 @@ function NavBarForInfo({}: Props) {
             <div className={styles.content}>
               <p className={styles.content1}>
                 {" "}
-                Han Yeeun <br />
-                s3912055
+                Han Yeeun <br /> <span className={styles.wipe}>s3912055</span>
               </p>
               <div className='justify-center'>
                 <button onClick={() => router.push('HomePage/Yeeun')} className={styles.check}>
@@ -117,8 +115,7 @@ function NavBarForInfo({}: Props) {
             <div className={styles.content}>
               <p className={styles.content1}>
                 {" "}
-                Chau Chan Bang <br />
-                s3975015
+                Chau Chan Bang <br /> <span className={styles.wipe}>s3975015</span>
               </p>
               <div className='justify-center'>
                 <button onClick={() => router.push('HomePage/Bang')} className={styles.check}>
