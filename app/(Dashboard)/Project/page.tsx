@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "../../../styles/text.module.css";
 import { motion } from "framer-motion";
-import NavBarForInfo from "../Component/NavBarForInfo";
+import NavBarForInfo from "../../Component/NavBarForInfo";
 type Props = {};
 function page({}: Props) {
   return (

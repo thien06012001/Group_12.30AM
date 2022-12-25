@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import styles from '../../../styles/NavBar.module.css'
+import styles from '../../styles/NavBar.module.css'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 type Props = {}
