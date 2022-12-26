@@ -34,20 +34,14 @@
 
 
 .boxed {
-    @apply mt-10 justify-center   ;
+  @apply mt-10 justify-center mx-auto my-auto relative w-[60%];
 	position: relative;
-    margin-left: 20%;
-	width: 60%;
 	background: linear-gradient(0deg, #000, #272727);
-    /* background-color: #c4c4c4; */
-  
 }
 
 .boxed:before, .boxed:after {
+  @apply absolute left-[-2px] top-[-2px];
 	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
 	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
 		#0000ff, #00ff00,#ffff00, #ff0000);
 	background-size: 400%;
@@ -73,10 +67,9 @@
 	filter: blur(25px);
 }
 .content{
-    @apply  justify-center items-center flex text-xl p-5 opacity-80;
+    @apply  flex text-xl p-5 opacity-80 text-[#f5f5f5];
     letter-spacing: 4px;
     font-weight: 500;
-    color: #f5f5f5;
     text-shadow: 
     0.25px 0.3px 0.25px #919191,
     0.25px 0.45px 0.25px #919191,
@@ -118,8 +111,7 @@
   transition: 0.8s all;
 }
 .neonText {
-  @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse z-50;
-  color: #fff;
+  @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse z-50 text-[#fff];
   line-height: 0.7em;
   text-shadow:
       0 0 7px rgb(31, 42, 145),
@@ -132,8 +124,7 @@
       0 0 151px rgb(51, 132, 84);
 }
 .neonText2 {
-  @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full;
-  color: #fff;
+  @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
   text-shadow:
       0 0 7px rgb(31, 42, 145),
       0 0 10px rgb(31, 42, 145),
@@ -145,8 +136,7 @@
       0 0 151px rgb(51, 132, 84);
 }
 .neonText3 {
-  @apply text-left text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full;
-  color: #fff;
+  @apply text-left text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
   text-shadow:
       0 0 7px rgb(31, 42, 145),
       0 0 10px rgb(31, 42, 145),
@@ -158,8 +148,7 @@
       0 0 151px rgb(51, 132, 84);
 }
 .neonText4 {
-  @apply text-center text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full;
-  color: #fff;
+  @apply text-center text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
   text-shadow:
       0 0 7px rgb(31, 42, 145),
       0 0 10px rgb(31, 42, 145),
@@ -171,26 +160,17 @@
       0 0 151px rgb(51, 132, 84);
 }
 .boxed2 {
-  @apply mt-10 justify-center   ;
+  @apply mt-10 justify-center m-auto relative flex w-[60%] font-sans text-[2.5rem] text-white bg-[#222];
   --border-width: 3px;
-  margin-left: 20%;
-  position: relative;
-  display: flex;
-  width: 60%;
-  font-family: Lato, sans-serif;
-  font-size: 2.5rem;
-  color: white;
-  background: #222;
   border-radius: var(--border-width);
 
  
 }
 .boxed2::after {
-  position: absolute;
+  @apply absolute z-[-1];
   content: "";
   top: calc(-1 * var(--border-width));
   left: calc(-1 * var(--border-width));
-  z-index: -1;
   width: calc(100% + var(--border-width) * 2);
   height: calc(100% + var(--border-width) * 2);
   background: linear-gradient(
@@ -214,6 +194,22 @@
   50% {
     background-position: 100% 50%;
   }
+}
+.colorText{
+  @apply  justify-center items-center text-3xl  p-5 opacity-80 uppercase font-extrabold;
+    outline: none;
+    letter-spacing: 4px;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate 10s linear infinite;
+  
+}
+@keyframes animate {
+to{
+  background-position: 400%;
+}
 }
 
 
