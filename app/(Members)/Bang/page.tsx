@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import styles from "../../../../styles/text.module.css";
-import goku from "../../../../public/assets/Goku.gif";
+import styles from "../../../styles/text.module.css";
+import goku from "../../../public/assets/Goku.gif";
 
 type Props = {};
 

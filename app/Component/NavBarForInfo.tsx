@@ -36,7 +36,7 @@ function NavBarForInfo({}: Props) {
                 <span className={styles.wipe}>s3883260</span>  
               </p>
               <div className='flex justify-center mx-auto'>
-                <Link href={'HomePage/Hien'} className={styles.check}>
+                <Link href={'/Hien'} className={styles.check}>
                  Read more
                 </Link>
               </div>
@@ -63,7 +63,7 @@ function NavBarForInfo({}: Props) {
                 Chau Chan Thien <br /> <span className={styles.wipe}>s3975010</span> 
               </p>
               <div className='flex justify-center mx-auto'>
-                <Link  className={styles.check} href={"HomePage/Thien"}>
+                <Link  className={styles.check} href={"/Thien"}>
                  Read more
                 </Link>
               </div>
@@ -89,7 +89,7 @@ function NavBarForInfo({}: Props) {
                 Han Yeeun <br /> <span className={styles.wipe}>s3912055</span>
               </p>
               <div className='flex justify-center mx-auto'>
-                <Link className={styles.check} href={"HomePage/Yeeun"}>
+                <Link className={styles.check} href={"/Yeeun"}>
                  Read more 
                 </Link>
               </div>
@@ -115,7 +115,7 @@ function NavBarForInfo({}: Props) {
                 Chau Chan Bang <br /> <span className={styles.wipe}>s3975015</span>
               </p>
               <div className='flex justify-center mx-auto'>
-                <Link href={'HomePage/Bang'} className={styles.check}>
+                <Link href={'/Bang'} className={styles.check}>
                  Read more
                 </Link>
               </div>
