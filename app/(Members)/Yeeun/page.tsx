@@ -89,13 +89,24 @@ function page({}: Props) {
         <div className={styles.boxed2}>
           <p className={styles.content}>
             I am still a starter in all my experience; it is not clear about the
-            specific plans that I would like to make in the future, but I know
-            that this is the field I want to work in. However, the ideal job for
-            me is to embody and create something that can predict the outcome.
-            It could be an application; it could be a machine. I wish to learn
-            more about various computer languages, application development, AI,
-            cloud, and data analysis to find out which areas of IT are
-            appropriate.
+            specific plans that I would like to make in the future, but if I
+            specify my desired future career, I want to participate in RPG game
+            production and game development sometime. I was a child who liked to
+            realize what I thought in my head since I was young. Therefore, when
+            I became interested in games a few years ago, it made me want to try
+            making them. The company I want to get a job in the future is
+            Smilegate, which is what made me interested in the game. Actually, I
+            want to participate in the game production with director Keum
+            Kang-son, who works there, rather than working for the game company.
+            His way of being good at communicating with consumers, bold in
+            reorganizing, and considering convenience as much as possible was an
+            impact on me. Also, I was thought of as an image of people who had a
+            great affection for games-making and doing together, which led to
+            the idea of working with him. Even if it's not game production, it's
+            certain that this field is the environment I want to work in in the
+            future. I want to gain more knowledge about various computer
+            languages, application development, AI, cloud, and data analysis to
+            work with some areas of IT in the future.
           </p>
         </div>
       </div>

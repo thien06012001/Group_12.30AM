@@ -7,7 +7,7 @@ type Props = {};
 
 function page({}: Props) {
   return (
-    <div className=" flex flex-col items-center justify-center relative  z-40  mt-7 - mx-auto  ">
+    <div className=" flex flex-col items-center justify-center relative z-40 mt-7 mx-auto  ">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{
@@ -18,9 +18,8 @@ function page({}: Props) {
       >
         Skills
       </motion.p>
-      <div className="flex flex-col items-center justify-center mt-7">
+      <div className="flex flex-col items-center justify-center mt-7 w-full">
         <p className={styles.colorText}>Project Manager</p>
-
         <div className={styles.boxed}>
           <li className={styles.content}>
             Project overview in sequence; direct other people to the proper
@@ -34,13 +33,12 @@ function page({}: Props) {
             A cooperative team player who wants to work on our projects's area.
           </li>
           <li className={styles.content}>
-            Having IT knowledge and experience in this position is a plus.
+            A cooperative team player who wants to work on our projects's area.
           </li>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-7">
+      <div className="flex flex-col items-center justify-center mt-7 w-full">
         <p className={styles.colorText}>Web Developer</p>
-
         <div className={styles.boxed}>
           <li className={styles.content}>
             Create, maintain, and customize the website depending on our project
@@ -53,7 +51,7 @@ function page({}: Props) {
           </li>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-7">
+      <div className="flex flex-col items-center justify-center mt-7 w-full">
         <p className={styles.colorText}>Mobile Developer </p>
         <div className={styles.boxed}>
           <li className={styles.content}>
@@ -63,7 +61,7 @@ function page({}: Props) {
           </li>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-7">
+      <div className="flex flex-col items-center justify-center mt-7 w-full">
         <p className={styles.colorText}>Researcher</p>
         <div className={styles.boxed}>
           <li className={styles.content}>
@@ -73,14 +71,13 @@ function page({}: Props) {
             Require a background in marketing or experience analyzing the IT
             industry, as well as strong research and number-crunching skills.
           </li>
-         <li className={styles.content}>
-          Analytical and critical thinking abilities.
+          <li className={styles.content}>
+            Analytical and critical thinking abilities.
           </li>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-7">
+      <div className="flex flex-col items-center justify-center mt-7 w-full">
         <p className={styles.colorText}>Discord Moderator</p>
-
         <div className={styles.boxed}>
           <li className={styles.content}>
             Control and filter the discord channel's messages.
