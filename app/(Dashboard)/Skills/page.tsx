@@ -55,11 +55,10 @@ function page({}: Props) {
       </div>
       <div className="flex flex-col items-center justify-center mt-7">
         <p className={styles.colorText}>Mobile Developer </p>
-
         <div className={styles.boxed}>
           <li className={styles.content}>
             For our project, create a mobile app where we can host a lot of
-            features. HTML and CSS knowledge is required in order to build for
+            features. Java and Swift knowledge is required in order to build for
             the MacOS, iOS, and Android operating systems.
           </li>
         </div>
