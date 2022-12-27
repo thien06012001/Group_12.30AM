@@ -7,7 +7,7 @@ type Props = {};
 
 function page({}: Props) {
   return (
-    <div className=" flex flex-col items-center justify-center relative uppercase z-40  mt-7 - mx-auto  ">
+    <div className=" flex flex-col items-center justify-center relative  z-40  mt-7 - mx-auto  ">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{
