@@ -129,11 +129,27 @@
   }
 }
 .Button2 {
-  @apply flex  items-center justify-center rounded-full z-50 fixed bottom-[50px] right-[50px] h-[50px] w-[50px] font-bold text-center cursor-pointer;
+  @apply flex items-center justify-center rounded-full z-50 fixed bottom-[50px] right-[50px] h-[50px] w-[50px] font-bold text-center cursor-pointer;
   background: linear-gradient(0deg, #000, #272727);
+  animation: border 2.5s linear infinite;
 }
-.Button2:after {
-  filter: blur(25px);
+@keyframes border{
+  0%{
+    @apply border border-red-600;
+  }
+  25%{
+    @apply border border-orange-600;
+  }
+  50%{
+    @apply border border-yellow-600;
+  } 
+  75%{
+    @apply border border-green-600;
+  }
+  100%{
+    @apply border border-blue-600;
+  }
+
 }
 .neonText {
   @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse z-50 text-[#fff];
