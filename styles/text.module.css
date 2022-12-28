@@ -31,140 +31,147 @@
   font-weight: 700;
 }
 
-
-
 .boxed {
   @apply mt-10 justify-center mx-auto my-auto relative w-[60%];
-	position: relative;
-	background: linear-gradient(0deg, #000, #272727);
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
 }
 
-.boxed:before, .boxed:after {
+.boxed:before,
+.boxed:after {
   @apply absolute left-[-2px] top-[-2px];
-	content: '';
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
 }
 
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .boxed:after {
-	filter: blur(25px);
+  filter: blur(25px);
 }
-.content{
-    @apply  flex text-xl p-5 opacity-80 text-[#f5f5f5];
-    letter-spacing: 4px;
-    font-weight: 500;
-    text-shadow: 
-    0.25px 0.3px 0.25px #919191,
-    0.25px 0.45px 0.25px #919191,
-    0.25px 0.7px 0.25px #919191,
-    0.25px 0.75px 0.25px #919191,
-    0.25px 0.90px 0.25px #919191,
-    0.25px 0.95px 0.25px #919191,
-    0.25px 1.1px 0.25px #919191,
-    0.25px 1.25px 0.25px #919191,
-    0.25px 1.4px 0.25px #919191,
-    0.25px 1.55px 0.25px #919191,
-    0.25px 2.5px 0.5px rgba(16,16, 16, 0.4),
-    0.25px 3.5px 0.8px rgba(16,16, 16, 0.2), 
-    0.25px 4px 2.4px rgba(16,16, 16, 0.2),
-    0.25px 5.5px 3.2px rgba(16,16, 16, 0.4);
-    transition: 0.8s all;
+.content {
+  @apply flex text-xl p-5 opacity-80 text-[#f5f5f5];
+  letter-spacing: 4px;
+  font-weight: 500;
+  text-shadow: 0.25px 0.3px 0.25px #919191, 0.25px 0.45px 0.25px #919191,
+    0.25px 0.7px 0.25px #919191, 0.25px 0.75px 0.25px #919191,
+    0.25px 0.9px 0.25px #919191, 0.25px 0.95px 0.25px #919191,
+    0.25px 1.1px 0.25px #919191, 0.25px 1.25px 0.25px #919191,
+    0.25px 1.4px 0.25px #919191, 0.25px 1.55px 0.25px #919191,
+    0.25px 2.5px 0.5px rgba(16, 16, 16, 0.4),
+    0.25px 3.5px 0.8px rgba(16, 16, 16, 0.2),
+    0.25px 4px 2.4px rgba(16, 16, 16, 0.2),
+    0.25px 5.5px 3.2px rgba(16, 16, 16, 0.4);
+  transition: 0.8s all;
 }
-.content2{
-  @apply  justify-center items-center flex text-xl p-5 opacity-80;
+.content2 {
+  @apply justify-center items-center flex text-xl p-5 opacity-80;
   letter-spacing: 4px;
   font-weight: 500;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 
-  0.25px 0.3px 0.25px #919191,
-  0.25px 0.45px 0.25px #919191,
-  0.25px 0.7px 0.25px #919191,
-  0.25px 0.75px 0.25px #919191,
-  0.25px 0.90px 0.25px #919191,
-  0.25px 0.95px 0.25px #919191,
-  0.25px 1.1px 0.25px #919191,
-  0.25px 1.25px 0.25px #919191,
-  0.25px 1.4px 0.25px #919191,
-  0.25px 1.55px 0.25px #919191,
-  0.25px 2.5px 0.5px rgba(16,16, 16, 0.4),
-  0.25px 3.5px 0.8px rgba(16,16, 16, 0.2), 
-  0.25px 4px 2.4px rgba(16,16, 16, 0.2),
-  0.25px 5.5px 3.2px rgba(16,16, 16, 0.4);
+  text-shadow: 0.25px 0.3px 0.25px #919191, 0.25px 0.45px 0.25px #919191,
+    0.25px 0.7px 0.25px #919191, 0.25px 0.75px 0.25px #919191,
+    0.25px 0.9px 0.25px #919191, 0.25px 0.95px 0.25px #919191,
+    0.25px 1.1px 0.25px #919191, 0.25px 1.25px 0.25px #919191,
+    0.25px 1.4px 0.25px #919191, 0.25px 1.55px 0.25px #919191,
+    0.25px 2.5px 0.5px rgba(16, 16, 16, 0.4),
+    0.25px 3.5px 0.8px rgba(16, 16, 16, 0.2),
+    0.25px 4px 2.4px rgba(16, 16, 16, 0.2),
+    0.25px 5.5px 3.2px rgba(16, 16, 16, 0.4);
   transition: 0.8s all;
+}
+.button{
+  animation: text 4s linear infinite;
+}
+@keyframes text {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+.Button2 {
+  @apply flex  items-center justify-center rounded-full z-50 fixed bottom-[50px] right-[50px] h-[50px] w-[50px] font-bold text-center cursor-pointer;
+  background: linear-gradient(0deg, #000, #272727);
+}
+.Button2:after {
+  filter: blur(25px);
 }
 .neonText {
   @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse z-50 text-[#fff];
   line-height: 0.7em;
-  text-shadow:
-      0 0 7px rgb(31, 42, 145),
-      0 0 10px rgb(31, 42, 145),
-      0 0 21px rgb(31, 42, 145),
-      0 0 42px rgb(31, 42, 145),
-      0 0 82px rgb(51, 132, 84),
-      0 0 92px rgb(51, 132, 84),
-      0 0 102px rgb(51, 132, 84),
-      0 0 151px rgb(51, 132, 84);
+  text-shadow: 0 0 7px rgb(31, 42, 145), 0 0 10px rgb(31, 42, 145),
+    0 0 21px rgb(31, 42, 145), 0 0 42px rgb(31, 42, 145),
+    0 0 82px rgb(51, 132, 84), 0 0 92px rgb(51, 132, 84),
+    0 0 102px rgb(51, 132, 84), 0 0 151px rgb(51, 132, 84);
+  animation: text 4s linear infinite;
 }
 .neonText2 {
   @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
-  text-shadow:
-      0 0 7px rgb(31, 42, 145),
-      0 0 10px rgb(31, 42, 145),
-      0 0 21px rgb(31, 42, 145),
-      0 0 42px rgb(31, 42, 145),
-      0 0 82px rgb(51, 132, 84),
-      0 0 92px rgb(51, 132, 84),
-      0 0 102px rgb(51, 132, 84),
-      0 0 151px rgb(51, 132, 84);
+  text-shadow: 0 0 7px rgb(31, 42, 145), 0 0 10px rgb(31, 42, 145),
+    0 0 21px rgb(31, 42, 145), 0 0 42px rgb(31, 42, 145),
+    0 0 82px rgb(51, 132, 84), 0 0 92px rgb(51, 132, 84),
+    0 0 102px rgb(51, 132, 84), 0 0 151px rgb(51, 132, 84);
+  animation: text 4s linear infinite;
 }
 .neonText3 {
   @apply text-left text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
-  text-shadow:
-      0 0 7px rgb(31, 42, 145),
-      0 0 10px rgb(31, 42, 145),
-      0 0 21px rgb(31, 42, 145),
-      0 0 42px rgb(31, 42, 145),
-      0 0 82px rgb(51, 132, 84),
-      0 0 92px rgb(51, 132, 84),
-      0 0 102px rgb(51, 132, 84),
-      0 0 151px rgb(51, 132, 84);
+  text-shadow: 0 0 7px rgb(31, 42, 145), 0 0 10px rgb(31, 42, 145),
+    0 0 21px rgb(31, 42, 145), 0 0 42px rgb(31, 42, 145),
+    0 0 82px rgb(51, 132, 84), 0 0 92px rgb(51, 132, 84),
+    0 0 102px rgb(51, 132, 84), 0 0 151px rgb(51, 132, 84);
+  animation: text 4s linear infinite;
 }
 .neonText4 {
   @apply text-center text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
-  text-shadow:
-      0 0 7px rgb(31, 42, 145),
-      0 0 10px rgb(31, 42, 145),
-      0 0 21px rgb(31, 42, 145),
-      0 0 42px rgb(31, 42, 145),
-      0 0 82px rgb(51, 132, 84),
-      0 0 92px rgb(51, 132, 84),
-      0 0 102px rgb(51, 132, 84),
-      0 0 151px rgb(51, 132, 84);
+  text-shadow: 0 0 7px rgb(31, 42, 145), 0 0 10px rgb(31, 42, 145),
+    0 0 21px rgb(31, 42, 145), 0 0 42px rgb(31, 42, 145),
+    0 0 82px rgb(51, 132, 84), 0 0 92px rgb(51, 132, 84),
+    0 0 102px rgb(51, 132, 84), 0 0 151px rgb(51, 132, 84);
+  animation: text 4s linear infinite;
 }
 .boxed2 {
   @apply mt-10 justify-center m-auto relative flex w-[60%] font-sans text-[2.5rem] text-white bg-[#222];
   --border-width: 3px;
   border-radius: var(--border-width);
-
- 
 }
 .boxed2::after {
   @apply absolute z-[-1];
@@ -195,21 +202,25 @@
     background-position: 100% 50%;
   }
 }
-.colorText{
-  @apply  justify-center items-center text-3xl  p-5 opacity-80 uppercase font-extrabold;
-    outline: none;
-    letter-spacing: 4px;
-    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    animation: animate 10s linear infinite;
-  
+.colorText {
+  @apply justify-center items-center text-3xl  p-5 opacity-80 uppercase font-extrabold;
+  outline: none;
+  letter-spacing: 4px;
+  background: linear-gradient(
+    135deg,
+    #5335cf 0%,
+    #de005e 25%,
+    #f66e48 50%,
+    #de005e 75%,
+    #5335cf 100%
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
 }
 @keyframes animate {
-to{
-  background-position: 400%;
+  to {
+    background-position: 400%;
+  }
 }
-}
-
-

@@ -9,8 +9,11 @@
     grid-auto-flow: column;
   }
   .img1 {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     width: 0;
-    min-width: calc(100% + var(--z)/2);
+    min-width: calc(100% + var(--z));
     height: var(--s);
     object-fit: cover;
     -webkit-mask: var(--mask);
@@ -20,8 +23,11 @@
   }
 
   .img2 {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     width: 0;
-    min-width: calc(100% + var(--z)/2);
+    min-width: calc(100% + var(--z)/4);
     height: var(--s);
     object-fit: cover;
     -webkit-mask: var(--mask);
@@ -30,12 +36,23 @@
     transition: .5s;
   }
   .img1:hover {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     width: calc(var(--s)/2);
+    height: var(--s);
   }
   .img2:hover {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     width: calc(var(--s)/2);
+    height: var(--s);
   }
   .img1 {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     place-self: start;
     clip-path: polygon(calc(2*var(--z)) 0,100% 0,100% 100%,0 100%);
     --mask: 
@@ -43,6 +60,9 @@
         50%/100% calc(2*var(--z)) repeat-y;
   }
   .img2 {
+    --z: 32px;  /* control the zig-zag  */
+    --s: 360px; /* control the size */
+    --g: 8px;
     place-self: end;
     clip-path: polygon(0 0,100% 0,calc(100% - 2*var(--z)) 100%,0 100%);
     --mask: 
@@ -77,7 +97,7 @@
     word-spacing: .8em;
   }
   .neonText2 {
-    @apply text-right text-3xl tracking-[20px] uppercase font-bold animate-pulse w-full text-[#fff];
+    @apply text-3xl tracking-[20px] uppercase font-bold animate-pulse  text-[#fff];
     text-shadow:
         0 0 7px rgb(31, 42, 145),
         0 0 10px rgb(31, 42, 145),
@@ -87,4 +107,147 @@
         0 0 92px rgb(51, 132, 84),
         0 0 102px rgb(51, 132, 84),
         0 0 151px rgb(51, 132, 84);
+    animation: text 4s linear infinite;
   }
+  @keyframes text{
+    0%{
+      color: red;
+     
+    }
+    25%{
+      color:orange;
+    }
+    50%{
+      color: yellow;
+    }
+    75%{
+      color: green;
+    }
+    100%{
+      color: blue;
+    }
+  }
+  .content{
+    @apply  flex text-[50px] p-5 opacity-80 text-[#f5f5f5];
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-shadow: 
+    0.5px 0.3px 0.25px #919191,
+    0.2px 0.45px 0.25px #919191,
+    0.5px 0.7px 0.25px #919191,
+    0.5px 0.75px 0.25px #919191,
+    0.5px 0.90px 0.25px #919191,
+    0.5px 0.95px 0.25px #919191,
+    0.5px 1.1px 0.25px #919191,
+    0.5px 1.25px 0.25px #919191,
+    0.5px 1.4px 0.25px #919191,
+    0.5px 1.55px 0.25px #919191,
+    0.5px 3.5px 0.5px rgba(16,16, 16, 0.4),
+    0.5px 4.5px 0.8px rgba(16,16, 16, 0.2), 
+    0.5px 5px 2.4px rgba(16,16, 16, 0.2),
+    0.5px 6.5px 3.2px rgba(16,16, 16, 0.4);
+    transition: 0.8s all;
+    animation: text 4s linear infinite;
+
+}
+.boxed {
+  @apply mt-10 cursor-pointer justify-center mx-auto my-auto relative w-[30%] flex items-center rounded-3xl ;
+  filter: grayscale();
+	background: linear-gradient(0deg, #000, #272727);
+}
+.boxed:hover{
+  filter: none;
+}
+ .boxed:after {
+  @apply absolute left-[-2px] top-[-2px] rounded-3xl;
+	content: '';
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.boxed:after {
+}
+.boxed2 {
+  @apply mt-10 justify-center m-auto relative  w-[60%] font-sans text-[2.5rem] text-white bg-[#222];
+  --border-width: 3px;
+  border-radius: var(--border-width);
+
+ 
+}
+.boxed2::after {
+  @apply absolute z-[-1];
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+.content2{
+    @apply  flex mx-auto text-xl p-5 opacity-80 text-[#f5f5f5] text-justify;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-shadow: 
+    0.25px 0.3px 0.25px #919191,
+    0.25px 0.45px 0.25px #919191,
+    0.25px 0.7px 0.25px #919191,
+    0.25px 0.75px 0.25px #919191,
+    0.25px 0.90px 0.25px #919191,
+    0.25px 0.95px 0.25px #919191,
+    0.25px 1.1px 0.25px #919191,
+    0.25px 1.25px 0.25px #919191,
+    0.25px 1.4px 0.25px #919191,
+    0.25px 1.55px 0.25px #919191,
+    0.25px 2.5px 0.5px rgba(16,16, 16, 0.4),
+    0.25px 3.5px 0.8px rgba(16,16, 16, 0.2), 
+    0.25px 4px 2.4px rgba(16,16, 16, 0.2),
+    0.25px 5.5px 3.2px rgba(16,16, 16, 0.4);
+    transition: 0.8s all;
+}
+.colorText{
+  @apply  justify-center items-center text-xl  p-5 opacity-80 text-center font-extrabold;
+    outline: none;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate 10s linear infinite;
+  
+}
+@keyframes animate {
+to{
+  background-position: 400%;
+}
+}
