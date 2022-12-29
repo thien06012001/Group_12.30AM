@@ -18,6 +18,7 @@ function page({}: Props) {
   const router = useRouter();
   return (
     <div className="relative z-30 mt-7">
+      <title>Project</title>
       <motion.div
         initial={{
           opacity: 0,

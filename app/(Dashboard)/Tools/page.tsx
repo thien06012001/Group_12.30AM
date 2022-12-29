@@ -17,6 +17,7 @@ type Props = {};
 function page({}: Props) {
   return (
     <div className="flex flex-col">
+      <title>Tools</title>
       <motion.div
         initial={{
           opacity: 0,

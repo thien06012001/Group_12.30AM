@@ -9,6 +9,7 @@ type Props = {};
 function page({}: Props) {
   return (
     <div className=" relative z-40 mt-7">
+      <title>Thien</title>
       <div className="flex  items-center justify-center">
         <motion.div
           initial={{

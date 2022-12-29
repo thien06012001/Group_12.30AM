@@ -8,6 +8,7 @@ type Props = {};
 function page({}: Props) {
   return (
     <div className=" flex flex-col items-center justify-center relative z-40 mt-7 mx-auto  ">
+      <title>Boys</title>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{

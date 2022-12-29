@@ -8,6 +8,7 @@ type Props = {};
 function page({}: Props) {
   return (
     <div className=" flex flex-col items-center justify-center relative z-40 mt-7 mx-auto  ">
+      <title>Reflection</title>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{
@@ -135,27 +136,26 @@ function page({}: Props) {
         <p className={styles.colorText}>Han Yeeun</p>
         <div className={styles.boxed}>
           <p className={styles.content}>
-            I learned about systematic collaboration while working with the team
-            12:30 am. Consisting of members with strong individuality and
-            opinions, we had a conflict at the beginning of the project, but we
-            overcame it well and showed great teamwork afterwards. I am grateful
-            to all the team members for their consideration of me as a
-            foreigner. Most of the time, when I was a foreigner alone, I was
-            bullied by the team and was given only what to do, but they tried to
-            make me fit in. For efficient work, the writing team and the coding
-            team were divided, but surprisingly, the teams did not split up and
-            shared information with each other to share and study individual
-            strengths. The coding team got advice from the writing team on the
-            design and report, and the writing team learned information about
-            HTML and CSS from the coding team. The interaction between each
-            other made the team stronger. They taught me kindly, and when there
-            were difficulties in solving problems, they tried to help to solve
-            problems together with me. I am grateful that I learned a lot from
-            them. In addition, the spirit of challenge was strong, so all the
-            team members wanted to apply the best we could to the website, and
-            as a result, we completed a functional website. Overall, I think the
-            progress of the problem-free project added perfection to the
-            results.
+            I learned about systematic collaboration while working with 12:30 am
+            team. Consisting of members with strong individuality and opinions,
+            we had a conflict at the beginning of the project, but we overcame
+            it well and showed great teamwork afterwards. I am grateful to all
+            the team members for their consideration of me as a foreigner. Most
+            of the time, when I was a foreigner alone, I was bullied by the team
+            and was given only what to do, but they tried to make me fit in. For
+            efficient work, the writing team and the coding team were divided,
+            but surprisingly, the teams did not split up and shared information
+            with each other to share and study individual strengths. The coding
+            team got advice from the writing team on the design and report, and
+            the writing team learned information about HTML and CSS from the
+            coding team. The interaction between each other made the team
+            stronger. They taught me kindly, and when there were difficulties in
+            solving problems, they tried to help to solve problems together with
+            me. I am grateful that I learned a lot from them. In addition, the
+            spirit of challenge was strong, so all the team members wanted to
+            apply the best we could to the website, and as a result, we
+            completed a functional website. Overall, I think the progress of the
+            problem-free project added perfection to the results.
           </p>
         </div>
       </div>
