@@ -1,15 +1,7 @@
 "use client";
+import Link from "next/link";
 import React from "react";
-import html from "../../../public/assets/html.png";
-import css3 from "../../../public/assets/css3.png";
-import java from "../../../public/assets/javascript-logo.png";
-import react from "../../../public/assets/reactjs-icon.png";
-import node from "../../../public/assets/node-js.png";
-import github from "../../../public/assets/github.png";
-import vercel from "../../../public/assets/Vercel-icon.png";
-import sanity from "../../../public/assets/Sanity.png";
-import next from "../../../public/assets/nextjs.png";
-import styles from "../../../styles/text.module.css";
+import styles from "../../../styles/tools.module.css";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -21,288 +13,85 @@ function page({}: Props) {
       <motion.div
         initial={{
           opacity: 0,
-          y: 500,
         }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className=" uppercase z-40 mt-7 mx-auto"
+        className=" uppercase text-center z-40 mt-7 mx-auto"
       >
-        <p className={styles.neonText2}>Tools</p>
+        <p className={styles.neonText2}>Link</p>
       </motion.div>
-      <div className="relative z-30 cursor-pointer grid grid-cols-3 w-[50%] ml-[25%] h-[600px]  ">
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={html.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: -200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+      <div className="grid grid-cols-2 mt-10 h-[500px] ">
+        <div className="flex items-center justify-center">
+          <Link
+            href="https://healthy-git-main-thien06012001.vercel.app/"
+            className={styles.boxed}
           >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">HTMl</p>
-            </div>
-          </motion.div>
+            <p className={styles.content}>Project</p>
+          </Link>
         </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={css3.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: -200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+        <div className="flex items-center justify-center">
+          <Link
+            href="https://group-12-30-am-git-main-thien06012001.vercel.app/"
+            className={styles.boxed}
           >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">CSS</p>
-            </div>
-          </motion.div>
+            <p className={styles.content}>Group</p>
+          </Link>
         </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={react.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: -200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+        <div className="flex items-center justify-center">
+          <Link
+            href="https://github.com/thien06012001/thien06012001.github.io.git/"
+            className={styles.boxed}
           >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                Reactjs
-              </p>
-            </div>
-          </motion.div>
+            <p className={styles.content}>Project Github</p>
+          </Link>
         </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: -200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={github.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: -200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
+        <div className="flex items-center justify-center">
+          <Link
+            href="https://github.com/thien06012001/Group_12.30AM.git"
+            className={styles.boxed}
           >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                GitHub
-              </p>
-            </div>
-          </motion.div>
+            <p className={styles.content}>Group Github</p>
+          </Link>
         </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.75 }}
-            viewport={{ once: true }}
-            src={java.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{}}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.75 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                JavaScript
-              </p>
-            </div>
-          </motion.div>
-        </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={node.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: 200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                Nodejs
-              </p>
-            </div>
-          </motion.div>
-        </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={vercel.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: 200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                Vercel
-              </p>
-            </div>
-          </motion.div>
-        </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={sanity.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: 200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                Sanity
-              </p>
-            </div>
-          </motion.div>
-        </div>
-        <div className="group relative flex cursor-pointer m-auto">
-          <motion.img
-            initial={{
-              opacity: 0,
-              x: 200,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            src={next.src}
-            alt=""
-            className=" rounded-full border border-gray-500 object-cover w-12 h-12 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300
-                    ease-in-out"
-          />
-          <motion.div
-            initial={{
-              x: 200,
-            }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12
-                    md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center m-auto h-full">
-              <p className="text-2xl font-bold text-black opacity-100">
-                Nextjs
-              </p>
-            </div>
-          </motion.div>
-        </div>
+      </div>
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: 300,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className=" uppercase text-center z-40 mt-7 mx-auto"
+      >
+        <p className={styles.neonText2}>Description</p>
+      </motion.div>
+      <div className={styles.boxed2}>
+        <p className={styles.content2}>
+          GitHub was useful in project development. Since it is an open-source
+          storage that can be hosted, it was not only easy for all members to
+          participate, but also highly utilised for several people to
+          collaborate. Due to the nature of GitHub's service, it can be used by
+          downloading what other members worked on and transmitting the modified
+          work on it, so it was a space where they could modify the wrong
+          functions or feedback from each other with better code. In addition,
+          there may be a problem that data can be impacted by one mistake in
+          collaboration, but the processes of modification and implementation
+          remained as records and could be restored to the desired point in
+          time.
+          <br />
+          GitHub is a convenient repository if people are aware of how to use
+          it, but unfortunately, all our team members were able to use GitHub's
+          service in the beginning because it was their first time dealing with
+          GitHub. Since all the members were beginners, even when learning about
+          GitHub in the tutorial, we learned a lot because it was our first time
+          learning from each other, and we asked each other and solved the
+          questions together. After that, I tried to remember and repeat what I
+          learned so that I could use it familiarly, and eventually, all members
+          could use basic services and use it useful for projects, even though
+          it was not perfect.
+        </p>
       </div>
     </div>
   );

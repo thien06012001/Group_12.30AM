@@ -66,7 +66,36 @@ function page({}: Props) {
         <p className={styles.neonText2}>Plan and progress</p>
       </motion.div>
       <div className={styles.boxed2}>
-        <p className={styles.content2}></p>
+        <p className={styles.content2}>
+          During the first three weeks, we discussed our project ideas, and
+          based on this, we made a whole project plan, gave each person
+          something to do, and wrote a plan. Before building the project plan,
+          there was a risk that the team members would suddenly leave, and the
+          meeting and plan were disrupted, delaying the progress.
+          <br />
+          The first step to start the project was a priority to design a website
+          that was good for customers to see. Hien, who had a good understanding
+          of user design, drew the design through Figma and showed it to
+          front-end developer Bang, who built the website using HTML and CSS
+          languages based on Hien's design sketches. We had to build both the
+          object website and the group website within a set time, so Bang and
+          Thien did a lot of research to make them all successful. The basic
+          knowledge and newly learned knowledge could be applied to web
+          development as soon as possible. Also, they ask for feedback on errors
+          and inconveniences whenever they have a new update. In addition, Yeeun
+          constantly updated external sources such as market content and menus
+          to go on the website.
+          <br />
+          In the last four weeks, we have stepped up efforts to complete the
+          project. We had the basic format of the website and continued to
+          update the more necessary and insufficient parts. While Thien and Bang
+          were fulfilling their responsibilities, Yeeun and Hien started
+          drafting reports based on the website. The details of the website and
+          technology were taken care of by Thien and Bang, and feedback was
+          constantly carried out to bring the website closer to success. We
+          discussed how to finish the parts such as the colour and format of the
+          website, and we had a final decision.
+        </p>
       </div>
       <motion.div
         initial={{
@@ -124,6 +153,40 @@ function page({}: Props) {
           have the most chance to buy. And if my business is growing as we plan,
           it would be added a function of suggesting foods based on the
           customer's favourite ingredients and allergy in the 2nd year.
+        </p>
+      </div>
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mt-20 mb-20 text-center"
+      >
+        <p className={styles.neonText2}>Group Process and Communication </p>
+      </motion.div>
+      <div className={styles.boxed2}>
+        <p className={styles.content2}>
+          Our group communicated mainly online. We contacted each other via
+          messenger and shared it with all the documents in our work through
+          GitHub and Google drive. In the first week, we wanted to have an
+          offline meeting every week, but we decided to communicate online to
+          efficiently proceed with the project. Because we noticed that it was
+          difficult to meet the meeting due to the personal schedule of all
+          teammates during the offline meeting early in the work. Therefore, we
+          had small meetings or used messenger calls after class every week to
+          share our work and inform each other of the progress of the project.
+          Also, we assigned a deadline for all detailed work, and when
+          non-prediction occurred on the deadline, we adjusted the date
+          flexibly. At the messenger, all members were notified so that others
+          could recognize the details determined by a small number of people or
+          when the stage of personal work was completed. Since we had more
+          online meetings than offline meetings, there is a good chance that
+          participation and concentration may not be maintained, but we have
+          never experienced any group members' participation issues throughout
+          the project, and everyone has been extremely focused during the
+          meeting.
         </p>
       </div>
     </div>
